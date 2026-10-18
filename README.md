@@ -1,9 +1,36 @@
-# Yao Du academic homepage · GitHub Pages
+# Yao Du | Academic Homepage
 
-Deploy: upload `index.html` to the root of the public `yaodududu.github.io` repository and enable Settings → Pages → Deploy from a branch → main → /(root).
+Personal academic website of Yao Du, Lecturer at the School of Accounting, Hangzhou Dianzi University.
 
-## Travel map
+**Website:** https://yaodududu.github.io/
 
-The map uses Leaflet and CARTO/OSM tiles (no Google Maps API key or billing required). Internet access is necessary to load map tiles and the Leaflet CDN. Map points **are schematic approximations inferred from the screenshot, not verified personal travel records**. Do not treat these as actual visited locations.
+## Site contents
 
-To replace the data, edit `internationalPoints` and `provincePoints` in `index.html` (or replace their combined `points` array with your actual records). For any location with images, set type to `photo`, add `photos: ['images/your-photo.jpg']` in a point record, and upload images into an `images/` folder. The photo viewer shows a placeholder until real photos are added. Do not claim 46 verified locations / 28 provinces or 10 actual photos until source data have been recovered.
+The website includes an academic biography, research interests, publications, academic service, an interactive travel map, and personal photo galleries. English and Chinese versions are available.
+
+## Repository structure
+
+```text
+yaodududu.github.io/
+├── index.html
+├── README.md
+└── images/
+    ├── profile.jpg
+    ├── my-dog.jpg
+    ├── travel-gallery/
+    └── dog-gallery/
+```
+
+## Deployment
+
+This is a static website hosted with GitHub Pages. The homepage is `index.html` in the repository root. In **Settings → Pages**, select **Deploy from a branch**, then **main** and **/(root)**. Changes become public after deployment succeeds.
+
+## Maintenance
+
+- Edit `index.html` to update text, layout, links, or the photo-gallery configuration.
+- Keep referenced images in the appropriate subfolders under `images/`.
+- When replacing or renumbering photos, update the image references in `index.html` as well.
+
+## Contact
+
+Email: duyao.mg07@nycu.edu.tw
